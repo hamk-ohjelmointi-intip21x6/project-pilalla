@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Veeti Vesterinen\\source\\repos\\ryhma-projekti\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
+      "projectUniqueName": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
       "projectName": "Palkanlaskenta",
-      "projectPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\ryhma-projekti\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
+      "projectPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
       "packagesPath": "C:\\Users\\Veeti Vesterinen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\ryhma-projekti\\project-pilalla\\Palkanlaskenta\\obj\\",
+      "outputPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Veeti Vesterinen\\AppData\\Roaming\\NuGet\\NuGet.Config",
