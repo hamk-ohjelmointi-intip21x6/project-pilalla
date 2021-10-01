@@ -1,0 +1,16 @@
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.exe
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.deps.json
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.runtimeconfig.json
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.runtimeconfig.dev.json
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.dll
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\ref\Palkanlaskenta.dll
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Palkanlaskenta.pdb
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.csproj.AssemblyReference.cache
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.AssemblyInfoInputs.cache
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.AssemblyInfo.cs
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.csproj.CoreCompileInputs.cache
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.dll
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\ref\Palkanlaskenta.dll
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.pdb
+C:\Users\leevi\Documents\Visual Studio Projects\Palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.genruntimeconfig.cache
