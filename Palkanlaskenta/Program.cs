@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+// testikommentti
 namespace Palkanlaskenta
 {
 	class Program
