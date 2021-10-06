@@ -1,22 +1,16 @@
-﻿namespace Palkanlaskenta
+﻿using Newtonsoft.Json;
+using System;
+
+namespace Palkanlaskenta
 {
-	internal class Tyontekija
+	[JsonObject]
+	public class Tyontekija
 	{
-		string Etunimi;
-		string Sukunimi;
+		public string Nimi { get; set; }
 
 		//constructor
-		public Tyontekija(string enimi, string snimi) {
-			this.Etunimi = enimi;
-			this.Sukunimi = snimi;
-		}
-
-		public string Nimi
-		{
-			get
-			{
-				return $"{this.Etunimi} {this.Sukunimi}";
-			}
+		public Tyontekija(string nimi) {
+			this.Nimi = nimi;
 		}
 	}
 }
