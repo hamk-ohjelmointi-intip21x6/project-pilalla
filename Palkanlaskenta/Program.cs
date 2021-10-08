@@ -14,65 +14,87 @@ namespace Palkanlaskenta
 			List<Kirjautuminen> käyttäjäTunnus = new List<Kirjautuminen>();
 			käyttäjäTunnus.Add(tunnus);
 
+			// Kirjoitetaan tekstitiedostoon käyttäjätunnuslista (jos tekstitiedostoa ei ole, luodaan uusi)
 			using (StreamWriter file = new StreamWriter("KirjautumisTunnus.txt"))
             {
 				var käyttäjäTunnusTekstiTiedostoon = $"{käyttäjäTunnus[0].KäyttäjäTunnus};{käyttäjäTunnus[0].Salasana}";
 				file.WriteLine(käyttäjäTunnusTekstiTiedostoon);
             }
-			Console.WriteLine($"{käyttäjäTunnus[0].KäyttäjäTunnus} {käyttäjäTunnus[0].Salasana}");
+
+			// Luetaan tekstitiedostoa
+			string line;
+			StreamReader sr = new StreamReader("KirjautumisTunnus.txt");
+			line = sr.ReadLine();
+			// Ja tulostetaan se ihan vain malliksi että muistaa mikä on tunnus ja salasana
+			Console.WriteLine(line);
+
+			// Kysytään käyttäjätunnus ja salasana
+			Console.WriteLine("\nSyötä Käyttäjätunnus");
+			var eka = Console.ReadLine();
+			Console.WriteLine("\nSyötä Salasana");
+			var toka = Console.ReadLine();
+			// Yhdistetään käyttäjätunnus ja salasana
+			var yhteen = eka +";"+ toka;
 
 			List<Tyontekija> tyontekijat = new List<Tyontekija>();
 
-			bool quit = false;
-			while (quit == false)
-			{
-				//Console.Clear();
-				Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä");
-
-				switch (Console.ReadLine())
+			// Jos käyttäjätunnus ja salasana ovat oikein pääsee muokkaamaan työntekijälistaa
+			if (yhteen.ToLower() == line.ToLower())
+            {
+				bool quit = false;
+				while (quit == false)
 				{
-					case "0":
-						quit = true;
-						break;
+					Console.Clear();
+					Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä");
 
-					case "1":
-						Console.Clear();
+					switch (Console.ReadLine())
+					{
+						case "0":
+							quit = true;
+							break;
 
-						if (tyontekijat.Count > 0)
-						{
-							foreach (Tyontekija t in tyontekijat)
+						case "1":
+							Console.Clear();
+
+							if (tyontekijat.Count > 0)
 							{
-								Console.WriteLine(t.Nimi);
+								foreach (Tyontekija t in tyontekijat)
+								{
+									Console.WriteLine(t.Nimi);
+								}
 							}
-						} else
-						{
-							
-							Console.WriteLine("Listassa ei ole työntekijöitä.");
-							
-						}
-						Console.ReadLine();
+							else
+							{
 
-						break;
+								Console.WriteLine("Listassa ei ole työntekijöitä.");
 
-					case "2":
-						Console.Clear();
+							}
+							Console.ReadLine();
 
-						Console.WriteLine("Etunimi: ");
-						string enimi = Console.ReadLine();
+							break;
 
-						Console.WriteLine("Sukunimi: ");
-						string snimi = Console.ReadLine();
+						case "2":
+							Console.Clear();
 
-						Tyontekija uusi = new Tyontekija(enimi, snimi);
-						tyontekijat.Add(uusi);
-						break;
+							Console.WriteLine("Etunimi: ");
+							string enimi = Console.ReadLine();
 
-					default:
-						break;
+							Console.WriteLine("Sukunimi: ");
+							string snimi = Console.ReadLine();
+
+							Tyontekija uusi = new Tyontekija(enimi, snimi);
+							tyontekijat.Add(uusi);
+							break;
+
+						default:
+							break;
+					}
 				}
 			}
-			
-
+			else
+            {
+				Console.WriteLine("Väärä käyttäjätunnus tai salasana");
+            }
 		}
 	}
 }
