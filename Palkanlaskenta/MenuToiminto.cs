@@ -9,7 +9,7 @@ namespace Palkanlaskenta
 	public abstract class MenuToiminto
 	{
 		public abstract void Suorita();
-		public List<Tyontekija> haeTyontekijat()
+		public List<Tyontekija> HaeTyontekijat()
 		{
 			List<Tyontekija> tyontekijat = new List<Tyontekija>();
 
