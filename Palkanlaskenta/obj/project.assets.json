@@ -48,19 +48,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Veeti Vesterinen\\.nuget\\packages\\": {}
+    "C:\\Users\\leevi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
+      "projectUniqueName": "C:\\Users\\leevi\\Desktop\\palkanlaskenta\\Palkanlaskenta\\Palkanlaskenta.csproj",
       "projectName": "Palkanlaskenta",
-      "projectPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
-      "packagesPath": "C:\\Users\\Veeti Vesterinen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\obj\\",
+      "projectPath": "C:\\Users\\leevi\\Desktop\\palkanlaskenta\\Palkanlaskenta\\Palkanlaskenta.csproj",
+      "packagesPath": "C:\\Users\\leevi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leevi\\Desktop\\palkanlaskenta\\Palkanlaskenta\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Veeti Vesterinen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -106,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
