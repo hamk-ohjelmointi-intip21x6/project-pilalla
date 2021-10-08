@@ -9,17 +9,17 @@ namespace Palkanlaskenta
 		static void Main(string[] args)
 		{
 			Kirjautuminen tunnus = new Kirjautuminen();
-			tunnus.EtuNimi = "Matti";
-			tunnus.SukuNimi = "Koivu";
+			tunnus.KäyttäjäTunnus = "Matti Koivu";
+			tunnus.Salasana = 1234;
 			List<Kirjautuminen> käyttäjäTunnus = new List<Kirjautuminen>();
 			käyttäjäTunnus.Add(tunnus);
 
 			using (StreamWriter file = new StreamWriter("KirjautumisTunnus.txt"))
             {
-				var käyttäjäTunnusTekstiTiedostoon = $"{käyttäjäTunnus[0].EtuNimi};{käyttäjäTunnus[0].SukuNimi}";
+				var käyttäjäTunnusTekstiTiedostoon = $"{käyttäjäTunnus[0].KäyttäjäTunnus};{käyttäjäTunnus[0].Salasana}";
 				file.WriteLine(käyttäjäTunnusTekstiTiedostoon);
             }
-			Console.WriteLine($"{käyttäjäTunnus[0].EtuNimi} {käyttäjäTunnus[0].SukuNimi}");
+			Console.WriteLine($"{käyttäjäTunnus[0].KäyttäjäTunnus} {käyttäjäTunnus[0].Salasana}");
 
 			List<Tyontekija> tyontekijat = new List<Tyontekija>();
 
@@ -65,11 +65,6 @@ namespace Palkanlaskenta
 
 						Tyontekija uusi = new Tyontekija(enimi, snimi);
 						tyontekijat.Add(uusi);
-						break;
-
-					case "3":
-						Console.Clear();
-						
 						break;
 
 					default:

@@ -9,8 +9,8 @@ namespace Palkanlaskenta
 {
     public class Kirjautuminen
     {
-        public string EtuNimi { get; set; }
-        public string SukuNimi { get; set; }
+        public string KäyttäjäTunnus { get; set; }
+        public int Salasana { get; set; }
 
         public Kirjautuminen()
         {
