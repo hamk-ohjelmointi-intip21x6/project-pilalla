@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wMW3uzWE92peRIiHjb/6usCV7I9cJW91Nzyf4hWeRgomi7VSe3vLqEwa/O2T0qXu5vA3J++YfgbSZM6EcMhKYw==",
+  "dgSpecHash": "LsGDB8AlRKdkueDfs734yHGqXvl/9ZBKC1b0X5hiQfpQ2mW57gOrCqGOHChwilrgFFjgLr1oTKtEbNk/gOL+zQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Veeti Vesterinen\\source\\repos\\project-pilalla\\Palkanlaskenta\\Palkanlaskenta.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Veeti Vesterinen\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

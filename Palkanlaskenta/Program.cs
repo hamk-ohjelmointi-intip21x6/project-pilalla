@@ -53,38 +53,27 @@ namespace Palkanlaskenta
 							quit = true;
 							break;
 
-						case "1":
-							Console.Clear();
+					case "1": //Tulosta työntekijälista
 
-							if (tyontekijat.Count > 0)
-							{
-								foreach (Tyontekija t in tyontekijat)
-								{
-									Console.WriteLine(t.Nimi);
-								}
-							}
-							else
-							{
+						MenuToiminto listaa = new ListaaTyontekijat();
+						listaa.Suorita();
+						Console.ReadLine();
 
-								Console.WriteLine("Listassa ei ole työntekijöitä.");
+						break;
 
-							}
-							Console.ReadLine();
+					case "2": //Lisää työntekijä
+
+						MenuToiminto lisaaTyontekija = new LisaaUusiTyontekija();
+						lisaaTyontekija.Suorita();
 
 							break;
 
-						case "2":
-							Console.Clear();
+					case "3":
 
-							Console.WriteLine("Etunimi: ");
-							string enimi = Console.ReadLine();
+						MenuToiminto poistaTyontekija = new PoistaTyontekija();
+						poistaTyontekija.Suorita();
 
-							Console.WriteLine("Sukunimi: ");
-							string snimi = Console.ReadLine();
-
-							Tyontekija uusi = new Tyontekija(enimi, snimi);
-							tyontekijat.Add(uusi);
-							break;
+						break;
 
 						default:
 							break;
