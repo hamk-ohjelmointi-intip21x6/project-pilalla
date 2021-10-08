@@ -12,11 +12,7 @@ namespace Palkanlaskenta
 		{
 			Console.Clear();
 
-			List<Tyontekija> tyontekijat = new List<Tyontekija>();
-			if (Save.ReadFromJsonFile<List<Tyontekija>>("tyontekijat.json") != null)
-			{
-				tyontekijat = Save.ReadFromJsonFile<List<Tyontekija>>("tyontekijat.json");
-			}
+			List<Tyontekija> tyontekijat = haeTyontekijat();
 
 			Console.WriteLine("Etunimi: ");
 			string enimi = Console.ReadLine();

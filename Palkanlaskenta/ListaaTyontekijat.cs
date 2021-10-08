@@ -12,12 +12,7 @@ namespace Palkanlaskenta
 		{
 			Console.Clear();
 
-			List<Tyontekija> tyontekijat = new List<Tyontekija>();
-
-			if (Save.ReadFromJsonFile<List<Tyontekija>>("tyontekijat.json") != null)
-			{
-				tyontekijat = Save.ReadFromJsonFile<List<Tyontekija>>("tyontekijat.json");
-			}
+			List<Tyontekija> tyontekijat = haeTyontekijat();
 
 			if (tyontekijat.Count > 0)
 			{
@@ -31,9 +26,6 @@ namespace Palkanlaskenta
 				Console.WriteLine("Listassa ei ole työntekijöitä.");
 			}
 
-			// tähän työntekijöiden/listan muokkaus?
-
-			Console.ReadLine();
 		}
 	}
 }

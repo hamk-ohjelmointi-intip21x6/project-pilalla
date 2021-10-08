@@ -7,14 +7,14 @@ namespace Palkanlaskenta
 	{
 		static void Main(string[] args)
 		{
+			// kirjautuminen tähän
 
 			bool quit = false;
 			while (quit == false)
 			{
-				Console.Clear();
-				Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä");
 
-				// kirjautuminen tähän
+				Console.Clear();
+				Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä\n3. Poista työntekijä");	
 				
 				switch (Console.ReadLine()) // työnantajan vaihtohdot
 				{
@@ -26,13 +26,21 @@ namespace Palkanlaskenta
 
 						MenuToiminto listaa = new ListaaTyontekijat();
 						listaa.Suorita();
+						Console.ReadLine();
 
 						break;
 
 					case "2": //Lisää työntekijä
 
-						MenuToiminto lisaaUusi = new LisaaUusiTyontekija();
-						lisaaUusi.Suorita();
+						MenuToiminto lisaaTyontekija = new LisaaUusiTyontekija();
+						lisaaTyontekija.Suorita();
+
+						break;
+
+					case "3":
+
+						MenuToiminto poistaTyontekija = new PoistaTyontekija();
+						poistaTyontekija.Suorita();
 
 						break;
 
