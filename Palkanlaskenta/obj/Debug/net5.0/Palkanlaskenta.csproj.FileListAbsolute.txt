@@ -67,3 +67,5 @@ C:\Users\leevi\Desktop\palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlask
 C:\Users\leevi\Desktop\palkanlaskenta\Palkanlaskenta\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\leevi\Desktop\palkanlaskenta\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.csproj.CopyComplete
 >>>>>>> f3c034f6e65614deba2a2550e09c5670b1356ef4
+C:\Users\Veeti Vesterinen\source\repos\project-pilalla\Palkanlaskenta\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Veeti Vesterinen\source\repos\project-pilalla\Palkanlaskenta\obj\Debug\net5.0\Palkanlaskenta.csproj.CopyComplete

@@ -45,7 +45,7 @@ namespace Palkanlaskenta
 				while (quit == false)
 				{
 					Console.Clear();
-					Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä");
+					Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä\n3. Poista työntekijä");
 
 					switch (Console.ReadLine())
 					{
