@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 // testikommentti
 namespace Palkanlaskenta
 {
@@ -7,13 +8,25 @@ namespace Palkanlaskenta
 	{
 		static void Main(string[] args)
 		{
-			
+			Kirjautuminen tunnus = new Kirjautuminen();
+			tunnus.EtuNimi = "Matti";
+			tunnus.SukuNimi = "Koivu";
+			List<Kirjautuminen> käyttäjäTunnus = new List<Kirjautuminen>();
+			käyttäjäTunnus.Add(tunnus);
+
+			using (StreamWriter file = new StreamWriter("KirjautumisTunnus.txt"))
+            {
+				var käyttäjäTunnusTekstiTiedostoon = $"{käyttäjäTunnus[0].EtuNimi};{käyttäjäTunnus[0].SukuNimi}";
+				file.WriteLine(käyttäjäTunnusTekstiTiedostoon);
+            }
+			Console.WriteLine($"{käyttäjäTunnus[0].EtuNimi} {käyttäjäTunnus[0].SukuNimi}");
+
 			List<Tyontekija> tyontekijat = new List<Tyontekija>();
 
 			bool quit = false;
 			while (quit == false)
 			{
-				Console.Clear();
+				//Console.Clear();
 				Console.WriteLine("0. lopeta\n1. Työntekijälista\n2. Lisää työntekijä");
 
 				switch (Console.ReadLine())
@@ -52,6 +65,11 @@ namespace Palkanlaskenta
 
 						Tyontekija uusi = new Tyontekija(enimi, snimi);
 						tyontekijat.Add(uusi);
+						break;
+
+					case "3":
+						Console.Clear();
+						
 						break;
 
 					default:
