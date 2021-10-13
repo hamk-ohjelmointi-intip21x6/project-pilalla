@@ -20,7 +20,10 @@ namespace Palkanlaskenta
 			Console.WriteLine("Sukunimi: ");
 			string snimi = Console.ReadLine();
 
-			Tyontekija uusi = new Tyontekija(enimi + " " + snimi);
+			Console.WriteLine("Tuntimäärä (per vko): ");
+			string tunnit = Console.ReadLine();
+
+			Tyontekija uusi = new Tyontekija(enimi + " " + snimi + " " + tunnit + " tuntia viikossa");
 
 			tyontekijat.Add(uusi);
 			Save.WriteToJsonFile("tyontekijat.json", tyontekijat);
