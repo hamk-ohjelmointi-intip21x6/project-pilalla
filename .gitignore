@@ -9,6 +9,11 @@
 *.user
 *.userosscache
 *.sln.docstates
+Palkanlaskenta/bin/Debug/net5.0/Palkanlaskenta.dll
+Palkanlaskenta/bin/Debug/net5.0/Palkanlaskenta.pdb
+Palkanlaskenta/obj/Debug/net5.0/Palkanlaskenta.csproj.AssemblyReference.cache
+Palkanlaskenta/obj/Debug/net5.0/Palkanlaskenta.dll
+Palkanlaskenta/obj/Debug/net5.0/Palkanlaskenta.pdb
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
