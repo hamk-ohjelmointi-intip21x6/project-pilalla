@@ -12,7 +12,7 @@ namespace Palkanlaskenta
 		{
 			Console.Clear();
 
-			List<Tyontekija> tyontekijat = haeTyontekijat();
+			List<Tyontekija> tyontekijat = HaeTyontekijat();
 
 			if (tyontekijat.Count > 0)
 			{

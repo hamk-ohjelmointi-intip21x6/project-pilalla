@@ -9,7 +9,7 @@ namespace Palkanlaskenta
 		{
 			Console.Clear();
 
-			List<Tyontekija> tyontekijat = haeTyontekijat();
+			List<Tyontekija> tyontekijat = HaeTyontekijat();
 
 			MenuToiminto listaa = new ListaaTyontekijat();
 			listaa.Suorita();

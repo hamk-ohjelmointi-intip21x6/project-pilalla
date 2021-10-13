@@ -12,7 +12,7 @@ namespace Palkanlaskenta
 		{
 			Console.Clear();
 
-			List<Tyontekija> tyontekijat = haeTyontekijat();
+			List<Tyontekija> tyontekijat = HaeTyontekijat();
 
 			Console.WriteLine("Etunimi: ");
 			string enimi = Console.ReadLine();
