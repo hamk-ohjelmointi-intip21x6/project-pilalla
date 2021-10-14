@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Palkanlaskenta
 {
-	public abstract class MenuToiminto
+	abstract class MenuToiminto
 	{
 		public abstract void Suorita();
 		public List<Tyontekija> HaeTyontekijat()

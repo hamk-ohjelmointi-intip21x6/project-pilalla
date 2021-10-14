@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Palkanlaskenta
 {
-	public class PoistaTyontekija : MenuToiminto
+	class PoistaTyontekija : MenuToiminto
 	{
 		public override void Suorita()
 		{
@@ -11,8 +11,17 @@ namespace Palkanlaskenta
 
 			List<Tyontekija> tyontekijat = HaeTyontekijat();
 
-			MenuToiminto listaa = new ListaaTyontekijat();
-			listaa.Suorita();
+			if (tyontekijat.Count > 0)
+			{
+				foreach (Tyontekija t in tyontekijat)
+				{
+					t.ListaaTiedot();
+				}
+			}
+			else
+			{
+				Console.WriteLine("Listassa ei ole työntekijöitä.");
+			}
 
 			Console.WriteLine("Poistettavan nimi (0 palaa päävalikkoon): ");
 

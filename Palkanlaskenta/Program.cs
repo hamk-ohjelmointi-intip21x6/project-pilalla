@@ -57,7 +57,6 @@ namespace Palkanlaskenta
 
 						MenuToiminto listaa = new ListaaTyontekijat();
 						listaa.Suorita();
-						Console.ReadLine();
 
 						break;
 
@@ -68,7 +67,7 @@ namespace Palkanlaskenta
 
 							break;
 
-					case "3":
+					case "3": //poista työntekijä
 
 						MenuToiminto poistaTyontekija = new PoistaTyontekija();
 						poistaTyontekija.Suorita();

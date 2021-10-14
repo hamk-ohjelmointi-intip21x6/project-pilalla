@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Palkanlaskenta
 {
-	public class ListaaTyontekijat : MenuToiminto
+	class ListaaTyontekijat : MenuToiminto
 	{
 		public override void Suorita()
 		{
@@ -18,7 +18,27 @@ namespace Palkanlaskenta
 			{
 				foreach (Tyontekija t in tyontekijat)
 				{
-					Console.WriteLine(t.Nimi);
+					t.ListaaTiedot();
+				}
+
+				Console.WriteLine("\nKatso tarkemmat tiedot (nimi; 0 palaa päävalikkoon): ");
+				string input = Console.ReadLine();
+				if (input != "0")
+				{
+					Console.Clear();
+
+					int tyontekijaIndex = tyontekijat.FindIndex(x => x.Nimi == input);
+
+					if (tyontekijaIndex == -1)
+					{
+						Console.WriteLine("Nimeä ei löytynyt.");
+					}
+					else
+					{
+						tyontekijat[tyontekijaIndex].TulostaPalkkaTiedot();
+					}
+
+					// Tänne muokkaus?
 				}
 			}
 			else
