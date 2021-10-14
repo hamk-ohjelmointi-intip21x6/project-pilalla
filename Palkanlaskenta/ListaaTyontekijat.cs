@@ -38,6 +38,7 @@ namespace Palkanlaskenta
 						tyontekijat[tyontekijaIndex].TulostaPalkkaTiedot();
 					}
 
+					Console.ReadLine();
 					// Tänne muokkaus?
 				}
 			}
