@@ -16,13 +16,26 @@ namespace Palkanlaskenta
 
 			if (tyontekijat.Count > 0)
 			{
+				// lista ilman sivukuluja
 				foreach (Tyontekija t in tyontekijat)
 				{
 					t.ListaaTiedot();
 				}
 
+				// sivukulujen katsominen
+				// tarkistetaan onko 0, kysyy uudestaan jos tyhjä
 				Console.WriteLine("\nKatso tarkemmat tiedot (nimi; 0 palaa päävalikkoon): ");
-				string input = Console.ReadLine();
+				string input = "";
+				while (input == "")
+				{
+					input = Console.ReadLine();
+					if (input == "0")
+					{
+						return;
+					}
+				}
+
+				// näytetään yhden työntekijän tiedot + sivukulut
 				if (input != "0")
 				{
 					Console.Clear();
@@ -38,15 +51,15 @@ namespace Palkanlaskenta
 						tyontekijat[tyontekijaIndex].TulostaPalkkaTiedot();
 					}
 
-					Console.ReadLine();
 					// Tänne muokkaus?
 				}
+
 			}
 			else
 			{
 				Console.WriteLine("Listassa ei ole työntekijöitä.");
 			}
-
+			Console.ReadLine();
 		}
 	}
 }

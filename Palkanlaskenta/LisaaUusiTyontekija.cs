@@ -56,6 +56,7 @@ namespace Palkanlaskenta
 			catch (FormatException)
 			{
 				Console.WriteLine("Virheellinen Arvo.");
+				Console.ReadLine();
 			}
 			catch (Exception)
 			{

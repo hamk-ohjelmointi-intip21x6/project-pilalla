@@ -53,29 +53,29 @@ namespace Palkanlaskenta
 							quit = true;
 							break;
 
-					case "1": //Tulosta työntekijälista
+						case "1": //Tulosta työntekijälista
 
-						MenuToiminto listaa = new ListaaTyontekijat();
-						listaa.Suorita();
-
-						break;
-
-					case "2": //Lisää työntekijä
-
-						MenuToiminto lisaaTyontekija = new LisaaUusiTyontekija();
-						lisaaTyontekija.Suorita();
+							MenuToiminto listaa = new ListaaTyontekijat();
+							listaa.Suorita();
 
 							break;
 
-					case "3": //poista työntekijä
+						case "2": //Lisää työntekijä
 
-						MenuToiminto poistaTyontekija = new PoistaTyontekija();
-						poistaTyontekija.Suorita();
+							MenuToiminto lisaaTyontekija = new LisaaUusiTyontekija();
+							lisaaTyontekija.Suorita();
 
-						break;
-
-						default:
 							break;
+
+						case "3": //poista työntekijä
+
+							MenuToiminto poistaTyontekija = new PoistaTyontekija();
+							poistaTyontekija.Suorita();
+
+							break;
+
+							default:
+								break;
 					}
 				}
 			}
